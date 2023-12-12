@@ -1,0 +1,496 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #262938;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#idiomas{
+    height: 8vh;
+    width: 5%;
+    position: absolute;
+    top: 0;
+    left: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#ingles{
+    height: 2rem;
+    width: 2rem;
+    background-image: url("./img/united-kingdom.png");
+    background-size: cover;
+}
+#ingles:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    filter: brightness(110%);
+}
+#español{
+    height: 2rem;
+    width: 2rem;
+    background-image: url("./img/spain.png");
+    background-size: cover;
+}
+#español:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    filter: brightness(110%);
+}
+#contenedor{
+    width: 70%;
+    height: auto;
+    min-height: 100vh;
+    padding-top: 5%;
+}
+#divPortada{
+    width: 100%;
+    height: 50vh;
+}
+
+.w-50{
+    width: 50%;
+}
+/* #sticky{
+    width: 3%;
+    height: 40vh;
+    background: linear-gradient(92deg, #FAE59E 0.89%, #D9B73E 98.59%);
+    position:sticky ;
+    top: 4%;
+    left: 97%;
+} */
+.fotoProfesional{
+    background-image: url(./img/DSC08202.jpg);
+    width: 30%;
+    background-size: cover;
+    margin-left: 15%;
+    border-radius: 20px;
+    background-position: 5% 20%;
+}
+.carlos{
+    font-size: 9rem;
+    font-weight: bold;
+    margin-left: -2%;
+}
+.text-golden{
+    background: linear-gradient(92deg, #FAE59E 0.89%, #D9B73E 98.59%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+@font-face {
+    font-family: textos;
+    src: url(./fonts/Inika-Regular.ttf);
+}
+@font-face {
+    font-family: titulos;
+    src: url(./fonts/Inika-Bold.ttf);
+}
+.font-text{
+    font-family: textos;
+}
+.font-title{
+    font-family: titulos;
+}
+.btn-golden{
+    height: auto;
+    min-width: 150px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    flex-shrink: 0;
+    border-radius: 25px;
+    border: 2px solid #FAE59E;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background-color: #262938;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin-right: 4%;
+    transition: .3s;
+}
+.btn-golden:hover{
+    background: linear-gradient(92deg, #FAE59E 0.89%, #D9B73E 98.59%);
+    color: #262938;
+    cursor: pointer;
+}
+#abajo{
+    width: 100%;
+    height: 10vh;
+    font-size: 4rem;
+    margin-top: 10%;
+    transition: .5s;
+}
+#flecha{
+    background: linear-gradient(92deg, #FAE59E 0.89%, #D9B73E 98.59%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#divFlecha{
+    animation-duration: 1s;
+    animation-name: movimiento;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+#divFlecha:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    text-shadow: 1px 1px 1px rgba(255, 255, 173, 0.45);
+}
+@keyframes movimiento {
+    from {
+      padding-top: 1%;
+    }
+  
+    to {
+      padding-top: 0%;
+    }
+  }
+
+#experiencia{
+    width: 100%;
+    height: auto;
+    margin-top: 10%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+}
+.divRow{
+    width: 100%;
+    min-height: 10vh;
+    margin-top: 2%;
+    border-left: 4px solid transparent;
+    border-image: linear-gradient(178deg, #FAE59E 0.89%, #D9B73E 98.59%) 1;
+    padding-left: 4%;
+}
+.divRow div{
+    width: 100%;
+    min-height: 6vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size: 1.5rem;
+}
+.divCaracteristicas{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.divCaracteristicas div{
+    width: 33%;
+    min-height: 8vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+.imgCargestion{
+    background-image: url(./img/image\ 1.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.tecnologias img{
+    margin-right: 3%;
+    width: 10%;
+    max-height: 5vh;
+}
+.tecnologias img:hover{
+    transform: translateY(-12%);
+}
+.tecnologias2 img{
+    margin-right: 3%;
+    width: 5%;
+    max-height: 5vh;
+}
+.tecnologias2 img:hover{
+    transform: translateY(-12%);
+}
+.imgEV{
+    background-image: url(./img/E&V\ Marbella\ Logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.empresa:hover{
+    background: linear-gradient(92deg, #FAE59E 0.89%, #D9B73E 98.59%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+}
+.logoEmpresa:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+#proyectos{
+    width: 100%;
+    height: auto;
+    margin-top: 10%;
+    padding-top: 2%;
+    padding-bottom: 5%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+}
+#lorga{
+    background-image: url(./img/lorga.png);
+    background-size: cover;
+    background-position: 45%;
+    border: 4px solid transparent;
+    border-image: linear-gradient(178deg, #FAE59E 0.89%, #D9B73E 98.59%) 1;
+    filter: brightness(0.9);
+}
+#lorga:hover{
+    filter: brightness(1);
+    transform: scale(1.01);
+}
+#maqueta{
+    background-image: url(./img/MaquetaE&V.png);
+    background-size: cover;
+    background-position: 45%;
+    border: 4px solid transparent;
+    border-image: linear-gradient(178deg, #FAE59E 0.89%, #D9B73E 98.59%) 1;
+    filter: brightness(0.9);
+}
+#maqueta:hover{
+    filter: brightness(1);
+    transform: scale(1.01);
+}
+.hover-golden:hover{
+    background: linear-gradient(92deg, #FAE59E 0.89%, #D9B73E 98.59%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#informacion{
+    width: 100%;
+    height: auto;
+    padding-top: 2%;
+    padding-bottom: 5%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+}
+#divInfo{
+    display: flex;
+    flex: row;
+    width: 100%;
+    height: 100%;
+    margin-top: 5%;
+}
+.bloqueInfo{
+    width: 33%;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+}
+.bloqueInfo div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.dato{
+    font-size: 1.2rem;
+    font-family: titulos;
+}
+.relleno{
+    font-size: 2rem;
+    font-family: textos;
+    margin-top: -4%;
+}
+.idiomas{
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-between;
+    align-items: start;
+}
+.idiomas img{
+    width: 30%;
+    margin-top: 6%;
+}
+#contacto{
+    width: 100%;
+    height: auto;
+    background: linear-gradient(92deg, #FAE59E 0.89%, #D9B73E 98.59%);
+    padding-top: 2%;
+    padding-bottom: 2%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+}
+.text-blue{
+    color: #262938;
+}
+#divContacto{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1%;
+}
+#divContacto div{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.3rem;
+}
+#creditos{
+    height: auto;
+    width: 100%;
+    background-color: #262938;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+}
+
+@media (max-width:900px) {
+    #contenedor{
+        width: 90%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .carlos{
+        font-size: 4rem;
+        margin-bottom: 2% !important;
+    }
+    #divPortada{
+        height: auto;
+        flex-direction: column !important;
+        justify-content: start !important;
+        align-items: start !important;
+    }
+    #divPortada div{
+        width: 100% !important;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        height: auto !important;
+        margin-bottom: 2%;
+    }
+    .fotoProfesional{
+        min-height: 40vh !important;
+        justify-content: flex-start !important;
+        margin-left: 0% !important;
+        margin-top: 0% !important;
+        background-position:51% 5%;
+    }
+    .btn-golden{
+        min-width: none !important;
+        width: 60%;
+    }
+    .botones{
+        flex-direction: column !important;
+        margin-top: 0% !important;
+    }
+    #abajo{
+        display: none !important;
+    }
+    #flecha{
+        display: none;
+    }
+    .desarrollador{
+        margin-top: -4% !important;
+        margin-bottom: 4% !important;
+    }
+    #experiencia{
+        padding-top: 10% !important;
+    }
+    #experiencia>h2{
+        margin-bottom: 0% !important;
+    }
+    .divCaracteristicas{
+        flex-direction: column !important;
+    }
+    .divCaracteristicas div{
+        flex-direction: row !important;
+        justify-content: start !important;
+        align-items: center !important;
+        margin-bottom: 5%;
+        width: 100%;
+    }
+    .imgCargestion{
+        width: 30% !important;
+    }
+    .imgEV{
+        width: 30% !important;
+    }
+    .puestoTrabajo{
+        font-size: 1.5rem !important;
+    }
+    .divRow{
+        padding-left: 8% !important;
+    }
+    .proyectos{
+        flex-direction: column !important;
+        margin-bottom: 25% !important;
+    }
+    #maqueta{
+        width: 100% !important;
+        min-height: 20vh;
+        margin-bottom: 10% !important;
+    }
+    #lorga{
+        width: 100% !important;
+        min-height: 20vh;
+        margin-bottom: 10% !important;
+    }
+    .info{
+        width: 100% !important;
+        padding-left: 0 !important;
+    }
+    .tecnologias2 img{
+        width: 10% !important;
+    }
+    #divProyectos{
+        height: auto !important;
+        padding-top: 1% !important;
+    }
+    #informacion{
+        margin-bottom: 5%;
+    }
+    #divInfo{
+        flex-direction: column !important;
+    }
+    .bloqueInfo{
+        width: 100% !important;
+        height: auto !important;
+        margin-bottom: 2%;
+    }
+    #divContacto{
+        flex-direction: column !important;
+        align-items: start !important;
+        width: 100% !important;
+    }
+    #divContacto div{
+        width: 100% !important;
+        justify-content: start !important;
+        padding-left: 7%;
+        font-size: 1.3rem;
+        text-align: center;
+    }
+    #contacto h2{
+        margin-top: 3%;
+    }
+
+}
