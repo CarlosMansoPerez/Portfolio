@@ -25,6 +25,9 @@ html{
   .bg-black-nav{
     background-color: black;
   }
+  .sombreado{
+    mask-image: linear-gradient(black 80%, transparent);
+  }
   body{
     scroll-snap-type: y mandatory;
     scroll-padding: 50px; 
